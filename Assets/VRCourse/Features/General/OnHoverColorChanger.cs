@@ -31,6 +31,8 @@ public class OnHoverColorChanger : MonoBehaviour
     {
         for (int i = 0; i < meshRenderer.Length; i++)
         {
+            Debug.Log("<<<<<< Exited>>>>>>");
+
             meshRenderer[i].material.color = startColors[i];
         }
     }
@@ -39,6 +41,7 @@ public class OnHoverColorChanger : MonoBehaviour
     {
         for (int i = 0; i < meshRenderer.Length; i++)
         {
+            Debug.Log("<<<<<< Entered>>>>>>");
             meshRenderer[i].material.color = hoverColor;
         }
     }
